@@ -1,0 +1,58 @@
+
+.select-container{
+    width:100%;
+    font-size: 14px;
+    color:#333;
+    display: flex;
+    flex-direction: flex-start;
+}
+.select-item{
+    width:168px;  
+    height: 43px;
+    margin-right: 60px;
+    border:1px solid #ccc;
+    border-radius: 4px; 
+    position: relative;
+    background:url('../../images/ren.png') left center no-repeat,url('../../images/downarrow.png') 150px center no-repeat;
+}
+
+.select-option{
+    position: absolute;
+    top:15px;
+    left:60px;
+}
+.options-container{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top:43px;
+}
+.options-container>li{
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 60px;
+}
+.delete-mark{
+    width:43px;
+    height: 43px;
+    background: url("../../images/delx.png") center center no-repeat;
+    position: absolute;
+    top:0;
+    right:-43px;
+}
+.btn-add{
+    width: 36px;
+    height:36px;
+    color:white;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    background: #FFAA00;
+    border:0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
