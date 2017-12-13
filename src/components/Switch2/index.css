@@ -1,0 +1,30 @@
+.background{
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.background.on .track{
+  background: #FFAA00;
+}
+.background.off .track{
+  background: #c0c0c0
+}
+.track {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 20px;
+  width: 40px;
+  position: relative
+}
+
+.thumb {
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: left 1s;
+  background: #fff;
+}
+.on .thumb {
+  left: 20px;
+}
