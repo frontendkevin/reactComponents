@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Switch from './components/Switch'
 import Switch2 from './components/Switch2'
 import RadioGroup from './components/RadioGroup'
+import CheckboxGroup from './components/CheckboxGroup'
 import SelectStaff from './components/SelectStaff'
 
 class App extends Component {
@@ -13,9 +13,17 @@ class App extends Component {
       options: [
           { id: "haha", name: "haha" },
           { id: "heihei", name: "heihei" },
-          { id: "hei", name: "hei" }
-
-      ]
+          { id: "hei", name: "hei" },
+          { id: "lol", name: "lol" },
+          { id: "kkk", name: "kkk" }
+      ],
+      options2: [
+        { id: "aaa", name: "aaa" },
+        { id: "bbb", name: "bbb" },
+        { id: "ccc", name: "ccc" },
+        { id: "ddd", name: "ddd" },
+        { id: "eee", name: "eee" }
+    ]
   }
     
   }
@@ -26,9 +34,14 @@ class App extends Component {
     console.log(val)
 
   }
+  handleCheckboxChange(val){
+    console.log(val)
+
+  }
   
   render() {
     const obj={id:"haha",name:"haha"}
+    const obj2=[{ id: "aaa", name: "aaa" },{ id: "bbb", name: "bbb" }]
     return (
       <div className="App">
         <header className="App-header">
@@ -41,6 +54,9 @@ class App extends Component {
         </div>
         <div style={{marginTop:100}}>
           <RadioGroup name="hhh" defaultVal={obj} options={this.state.options} handleRadioChange={this.handleRadioChange.bind(this)}/>
+        </div>
+        <div style={{marginTop:100}}>
+          <CheckboxGroup name="aaa" defaultVal={obj2} options={this.state.options2} handleCheckboxChange={this.handleCheckboxChange.bind(this)}/>
         </div>
       </div>
     );
